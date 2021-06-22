@@ -1,0 +1,17 @@
+{
+  "name": "profile",
+  "license": "MIT",
+  "repository": "https://github.com/cybertino/profile-subgraph",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ --ipfs https://api.thegraph.com/ipfs/ cybertino/profile-subgraph",
+    "create-local": "graph create --node http://localhost:8020/ cybertino/profile-subgraph",
+    "remove-local": "graph remove --node http://localhost:8020/ cybertino/profile-subgraph",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 cybertino/profile-subgraph"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "https://github.com/graphprotocol/graph-cli#master",
+    "@graphprotocol/graph-ts": "0.18.0"
+  }
+}
